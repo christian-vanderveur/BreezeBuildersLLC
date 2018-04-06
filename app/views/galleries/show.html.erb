@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project name:</strong>
+  <%= @gallery.project_name %>
+</p>
+
+<p>
+  <strong>Before img:</strong>
+  <%= @gallery.before_img %>
+</p>
+
+<p>
+  <strong>After img:</strong>
+  <%= @gallery.after_img %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gallery.description %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @gallery.date %>
+</p>
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>
