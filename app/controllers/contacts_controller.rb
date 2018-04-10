@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
+  before_action :authenticate_admin!, except: [:new, :create]
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-  access all: [:new, :create], admin: :all
-  
+
   # GET /contacts
   # GET /contacts.json
   def index
@@ -29,7 +29,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Contact was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }
