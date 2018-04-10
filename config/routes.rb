@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   devise_for :admins
   resources :galleries
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
 
   get "about_me", to: 'pages#about_me'
 
-  get "contact", to: 'contact#contact'
+  get "contact", to: 'contacts#contact_me'
 end
 
 
