@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get "about_me", to: 'pages#about_me'
 
-  get "contact", to: 'contacts#contact_me'
+  get "admin_contacts", to: 'contacts#admin_index'
 end
 
 
