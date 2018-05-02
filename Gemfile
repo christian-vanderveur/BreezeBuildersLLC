@@ -53,3 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.2'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'carrierwave', '~> 0.11.2'
+gem 'dotenv-rails', '~> 2.4'
+gem 'mini_magick', '~> 4.8'

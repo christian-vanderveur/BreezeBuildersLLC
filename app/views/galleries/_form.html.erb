@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :before_img %>
-    <%= form.text_area :before_img, id: :gallery_before_img %>
+    <%= form.file_field :before_img, id: :gallery_before_img, multiple: true %>
   </div>
 
   <div class="field">
     <%= form.label :after_img %>
-    <%= form.text_area :after_img, id: :gallery_after_img %>
+    <%= form.file_field :after_img, id: :gallery_after_img, multiple: true %>
   </div>
 
   <div class="field">
