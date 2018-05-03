@@ -50,8 +50,7 @@ ActiveRecord::Schema.define(version: 20180502162015) do
     t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.json "before"
-    t.json "after"
+
   end
 
 end
