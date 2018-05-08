@@ -1,0 +1,2 @@
+class BeforePhoto < ApplicationRecord
+end

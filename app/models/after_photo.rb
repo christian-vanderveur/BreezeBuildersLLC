@@ -1,0 +1,2 @@
+class AfterPhoto < ApplicationRecord
+end
